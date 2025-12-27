@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Two Friends Explain My Food</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🍽️ Two Friends Explain My Food</h1>
+            <p class="subtitle">Let two friendly friends tell you all about your food in a simple way!</p>
+        </header>
+
+        <div class="input-section">
+            <div class="input-group">
+                <label for="food-input">Type a food name:</label>
+                <input type="text" id="food-input" placeholder="e.g., pizza, sushi, apple...">
+            </div>
+            
+            <div class="divider">
+                <span>OR</span>
+            </div>
+
+            <div class="input-group">
+                <label for="food-image">Upload a photo:</label>
+                <input type="file" id="food-image" accept="image/*">
+                <div class="image-preview" id="image-preview"></div>
+            </div>
+
+            <button id="explain-btn" class="explain-btn">
+                <span>Explain Food</span>
+                <span class="emoji">✨</span>
+            </button>
+        </div>
+
+        <div id="thinking" class="thinking hidden">
+            <div class="thinking-animation">
+                <span>💭</span>
+                <span>🤔</span>
+                <span>🧠</span>
+            </div>
+            <p>Our friends are thinking...</p>
+        </div>
+
+        <div id="results" class="results hidden">
+            <div class="friend-card friend-a">
+                <div class="friend-header">
+                    <span class="friend-emoji">👩</span>
+                    <h2>Friend A</h2>
+                </div>
+                <p class="friend-text" id="friend-a-text"></p>
+            </div>
+
+            <div class="friend-card friend-b">
+                <div class="friend-header">
+                    <span class="friend-emoji">👨</span>
+                    <h2>Friend B</h2>
+                </div>
+                <p class="friend-text" id="friend-b-text"></p>
+            </div>
+
+            <div class="final-answer">
+                <div class="final-header">
+                    <span class="final-emoji">🤖</span>
+                    <h2>Final Answer</h2>
+                </div>
+                <p class="final-text" id="final-text"></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
