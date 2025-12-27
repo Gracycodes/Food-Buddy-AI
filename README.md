@@ -96,3 +96,4 @@ This prototype is designed to impress judges quickly:
 ---
 
 Built with ❤️ for hackathons and food lovers!
+
