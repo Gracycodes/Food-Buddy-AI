@@ -1,99 +1,87 @@
-# 🍽️ Two Friends Explain My Food
+**Two Friends Explain My Food**
 
-A friendly, child-friendly web app that explains food in simple terms using three perspectives: two friendly friends and a final summary explained like you're 10 years old!
+Two Friends Explain My Food is a simple and friendly web application that explains food in an easy and understandable way.
+Instead of using technical or complicated terms, the app explains food like a casual conversation between two friends, followed by a simple final explanation that anyone can understand.
+This project is designed to be intuitive, visually pleasant, and easy to demo during hackathons.
 
-## ✨ Features
+**What the App Does**
 
-- **Text Input**: Type any food name to get an explanation
-- **Image Upload**: Upload a photo of food (AI simulation)
-- **Three-Part Explanation**:
-  - 👩 Friend A - Why people like this food
-  - 👨 Friend B - Why to be careful
-  - 🤖 Final Answer - Explained simply for everyone
-- **Beautiful UI**: Warm gradients, rounded cards, smooth animations
-- **Mobile-Friendly**: Responsive design that works on all devices
+Allows users to type a food name or upload an image of food
 
-## 🚀 Quick Start
+Explains the food using three simple perspectives:
+Friend A explains why people like the food
+Friend B explains why one should be careful
 
-### Prerequisites
+A final explanation summarizes everything in very simple language
 
-- Node.js (v14 or higher)
-- npm (comes with Node.js)
+Displays explanations in a clean and responsive user interface
 
-### Installation & Running
+Works smoothly on both desktop and mobile devices
 
-1. **Install dependencies:**
-   ```bash
-   npm install
-   ```
+**Why This Project**
 
-2. **Start the server:**
-   ```bash
-   npm start
-   ```
+Most food or nutrition apps feel overly technical or boring.
 
-3. **Open your browser:**
-   Navigate to `http://localhost:3000`
+This project focuses on:
+- Simple language
+- Friendly explanations
+- Clear understanding
 
-That's it! The app is now running locally. 🎉
+The goal is to make food explanations feel natural and approachable rather than instructional.
 
-## 📁 Project Structure
+**Live Demo :** https://food-buddy-ai.onrender.com/
 
-```
-├── index.html      # Main HTML file
-├── style.css       # All styling and animations
-├── script.js       # Frontend JavaScript
-├── server.js       # Express backend server
-├── package.json    # Node.js dependencies
-└── README.md       # This file
-```
+**Getting Started**
 
-## 🎨 Design Philosophy
+**Requirements**
+- Node.js (version 14 or higher)
+- npm
 
-- **Warm & Friendly**: Child-friendly language, no medical terms or numbers
-- **Visual Appeal**: Soft gradients, rounded cards with shadows, emoji personality
-- **Smooth UX**: "Thinking..." animations, hover effects, smooth scrolling
-- **Accessibility**: Clean typography (Poppins font), clear visual hierarchy
+**Run the Project Locally**
+- Install dependencies
+- Copy code
+- Bash
+- npm install
+- Start the server
+- Copy code
+- Bash
+- npm start
+- Open your browser and visit : http://localhost:3000
 
-## 🔧 Technical Stack
+**Project Structure**
+Copy code
 
-- **Frontend**: HTML5, CSS3, Vanilla JavaScript
-- **Backend**: Node.js + Express
-- **File Upload**: Multer (for image handling)
+- index.html      // Main UI
+- style.css       // Styling and animations
+- script.js       // Frontend logic
+- server.js       // Express backend server
+- package.json    // Project dependencies
+- README.md       // Project documentation
 
-## 💡 How It Works
+**Technologies Used**
+- HTML, CSS, JavaScript for frontend
+- Node.js and Express for backend
+- Multer for handling image uploads
 
-1. User enters a food name or uploads an image
-2. Frontend sends request to `/explain-food` endpoint
-3. Backend generates a friendly three-part explanation (currently using mock data)
-4. Results are displayed in beautiful card format
+**How It Works**
+The user enters a food name or uploads an image
+The frontend sends a request to the backend
+The backend returns a three-part explanation
+The explanation is displayed in structured cards on the UI
+Currently, the app uses mock responses to simulate AI behavior for demonstration purposes.
 
-## 🎯 Hackathon Ready
+**Notes**
+No real AI or vision API is integrated yet
+Supports common image formats such as JPG and PNG
+Maximum image size allowed is 5MB
+Some foods like pizza, apple, and sushi have predefined explanations
 
-This prototype is designed to impress judges quickly:
-- ✅ Instant visual appeal
-- ✅ Clear, understandable concept
-- ✅ Polished UI/UX
-- ✅ Easy to demo
-- ✅ Works immediately
+**Future Improvements**
+Integrate real AI-based image recognition
+Use nutrition APIs for better food understanding
+Add save and share features
+Expand the food database
 
-## 📝 Notes
-
-- Currently uses mock AI responses (no real AI API integration)
-- Image upload accepts common image formats (jpeg, png, etc.)
-- File size limit: 5MB per image
-- Pre-configured explanations for: pizza, apple, sushi
-- Other foods get friendly generic explanations
-
-## 🚀 Future Enhancements
-
-- Integration with real AI vision API for image recognition
-- Integration with nutrition API for more accurate explanations
-- Save favorite explanations
-- Share explanations with friends
-- More food options in database
-
----
-
-Built with ❤️ for hackathons and food lovers!
-
+**Final Note**
+This project prioritizes clarity, simplicity, and user experience.
+It is built as a functional prototype that is easy to understand, easy to demo, and visually appealing
